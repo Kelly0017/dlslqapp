@@ -20,8 +20,17 @@ public class Users {
 	@Column(name = "student_number")
 	private String student_number;
 	
-	@Column(name = "currently_queuieng")
+	@Column(name = "currently_queueing")
 	private String currently_queueing;
+	
+	@Column(name = "cashier_number")
+	private String cashier_number;
+	
+	@Column(name = "queue_number")
+	private String queue_number;
+	
+	@Column(name = "is_priority")
+	private String is_priority;
 
 	public String getId() {
 		return id;
@@ -61,6 +70,30 @@ public class Users {
 
 	public void setCurrently_queueing(String currently_queueing) {
 		this.currently_queueing = currently_queueing;
+	}
+
+	public String getCashier_number() {
+		return cashier_number;
+	}
+
+	public void setCashier_number(String cashier_number) {
+		this.cashier_number = cashier_number;
+	}
+
+	public String getQueue_number() {
+		return queue_number;
+	}
+
+	public void setQueue_number(String queue_number) {
+		this.queue_number = queue_number;
+	}
+
+	public String getIs_priority() {
+		return is_priority;
+	}
+
+	public void setIs_priority(String is_priority) {
+		this.is_priority = is_priority;
 	}
 	
 }
